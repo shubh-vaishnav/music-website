@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+   font-weight: 300;
+   line-height: 1.4;
+   scroll-behavior: smooth;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root{
+    --purple500: #281154;
+    --purple300: #2d1d4c;
+    --purple800: #1b0545;
+    --body: #ffffff;
+    --max-width: 1200px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    
+}
+
+header{
+    background-color: var(--purple800); 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-menu ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+
+}
+
+.nav-menu ul li a{
+    font-size: 20px;   
+}
+
+.main-section{
+    background-image: url(images/main-image.jpg);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white
+}
+
+.main-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main-section h1{
+    font-size: 72px;
+}
+
+.main-section h3{
+    font-size: 32px;
+}
+
+
+.main-section p{
+    font-size: 18px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.music-section{
+    padding: 50px;
+    background-color: var(--purple300);
+}
+
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ipad-image{
+    margin-top: -250px;
+    position: relative;
+    top: 260px;
+}
+
+.music-section h2{
+    font-size: 32px;
+}
+
+.music-section h4{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.primary-btn{
+    background-color: red;
+    color: white;
+}
+
+.seconday-btn{
+    background-color: rgb(60, 11, 109);
+    color: white;
+}
+
+.about-music{
+    padding-top: 300px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.video-section{
+    background-image: url(images/main-image.jpg);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+}
+
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+}
+
+.main-section, .video-section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 150px auto;
+    gap: 30px;
+}
+
+.gift-card img{
+    width: 500px;
+}
+
+.gift-contain{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 20px;
+}
+
+
+.footer-upper{
+    background-color: #281154;
+    color: white;
+    padding: 20px;
+}
+
+.footer-upper .container{
+    display: flex;
+justify-content: space-between;
+}
+
+.footer-upper h3{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.footer-lower{
+    background-color: #2d1d4c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+section{
+    scroll-margin: 50px;
+}
+
+.gift-section{
+    scroll-margin: 150px;
+}
